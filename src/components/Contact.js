@@ -31,7 +31,7 @@ export const Contact = () => {
                 <span >
                   <div className="social-icon">
                   <a target="_blank" href="mailto:jaydeeptalaviya8@gmail.com"><img src={email} alt="email" /></a>
-                  <a target="_blank" href="www.linkedin.com/in/jaydeep-talaviya-540901195"><img src={linkedin} alt="linkedin" /></a>
+                  <a target="_blank" href="https://www.linkedin.com/in/jaydeep-talaviya-540901195"><img src={linkedin} alt="linkedin" /></a>
                   <a target="_blank" href="https://t.me/Jay_talaviya"><img src={telegram} alt="tele" /></a>
                     <a target="_blank" href="https://www.instagram.com/jay_talaviya_99?igsh=MWN6dG4zdzBrMDhrMA=="><img src={ig} alt="ig" /></a>
                     <a target="_blank" href="https://wa.me/916353701592"><img src={wa} alt="wa" /></a>
