@@ -46,7 +46,7 @@ function NavBar() {
             <Nav.Link href="#home" className={`navbar-link ${activeLink === 'home' && 'active'}`} onClick={()=>setActiveLink('home')}>Home</Nav.Link>
             <Nav.Link href="#skills" className={`navbar-link ${activeLink === 'skills' && 'active'}`} onClick={()=>setActiveLink('skills')}>Skills</Nav.Link>
             <Nav.Link href="#projects" className={`navbar-link ${activeLink === 'projects' && 'active'}`} onClick={()=>setActiveLink('projects')}>Projects</Nav.Link>
-            <Nav.Link href="#achievements" className={`navbar-link ${activeLink === 'achievements' && 'active'}`} onClick={()=>setActiveLink('achievements')}>Achievements</Nav.Link>
+            <Nav.Link href="#achievements" className={`navbar-link ${activeLink === 'achievements' && 'active'}`} onClick={()=>setActiveLink('achievements')}>Profile</Nav.Link>
           </Nav>
           <span className="navbar-text">
                 <button className="vvd" onClick={() => navigateToSection('connect')}><span>Let’s Connect</span></button>

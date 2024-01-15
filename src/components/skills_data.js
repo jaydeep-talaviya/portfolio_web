@@ -35,7 +35,7 @@ const skills = [
     ],
 },
     {
-        topic_name:'familiar',
+        topic_name:'Familiar',
         topic_skill: [
       { skill: 'Bootstrap 4', percentage: 86 },
       { skill: 'Material UI', percentage: 70 },
@@ -48,7 +48,7 @@ const skills = [
     ],
 },
     {
-        topic_name:'general',
+        topic_name:'General',
         topic_skill: [
       { skill: 'REST API', percentage: 80 },
       { skill: 'OOP Concepts', percentage: 75 },

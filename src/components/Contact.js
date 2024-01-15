@@ -23,7 +23,7 @@ export const Contact = () => {
                 <img  src={contactImg} alt="Contact Us"/>
             
           </Col>
-          <Col size={12} md={6}>
+          <Col size={12} md={6} className="pb-3">
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn text-center" : "text-center"}>

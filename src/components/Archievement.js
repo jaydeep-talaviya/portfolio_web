@@ -15,7 +15,7 @@ function Archievement() {
                         <TrackVisibility>
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                                    <h2>Archievements</h2>
+                                    <h2>Profile</h2>
                                     <p>professional certifications and archievement</p>
                                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
                                         <Nav variant="pills" className="nav-pills flex-column flex-sm-row mb-5 justify-content-center align-items-center" id="pills-tab">
