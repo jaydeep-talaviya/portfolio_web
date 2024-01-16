@@ -4,7 +4,7 @@ import { ArrowRightCircle,Download } from 'react-bootstrap-icons';
 import headerImg from '../static/bg/header-img.svg';
 import TrackVisibility from 'react-on-screen';
 import 'animate.css';
-import resume from '../static/python_dev_jaydeep.pdf'
+import resume from '../static/resume/jaydee_talaviya_cv.pdf'
 
 function Banner() {
     const [loopNum,setLoopNum] = useState(0);
@@ -20,7 +20,7 @@ function Banner() {
       const resumePath = resume;
       const link = document.createElement('a');
       link.href = resumePath;
-      link.download = 'Jaydeep_Python_Dev_3Y.pdf';
+      link.download = 'Jaydeep_Python_Dev_3y.pdf';
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
