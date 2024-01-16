@@ -4,7 +4,7 @@ import { ArrowRightCircle,Download } from 'react-bootstrap-icons';
 import headerImg from '../static/bg/header-img.svg';
 import TrackVisibility from 'react-on-screen';
 import 'animate.css';
-import resume from '../static/Resume/python_dev_Jaydeep.pdf'
+import resume from '../static/Resume/python_dev__jaydeep.pdf'
 
 function Banner() {
     const [loopNum,setLoopNum] = useState(0);
