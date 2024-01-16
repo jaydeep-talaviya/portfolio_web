@@ -20,7 +20,7 @@ function Banner() {
       const resumePath = resume;
       const link = document.createElement('a');
       link.href = resumePath;
-      link.download = 'Jaydeep_Python_dev_3y.pdf';
+      link.download = 'Jaydeep_Python_Dev_3y.pdf';
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
