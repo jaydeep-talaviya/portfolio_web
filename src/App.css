@@ -583,6 +583,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
 }
+
+.container form{
+  text-align: left;
+    font-size: larger;
+
+}
+
+.container .container{
+  background-color: rgb(199 187 187 / 12%);
+  border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    padding: 40px;
+
+}
+
 .contact img {
   width: 92%;
 }
@@ -634,20 +649,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button:hover {
   color: #fff;
-}
-.contact form button::before {
-  content: "";
-  background: #121212;
-  width: 0;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  transition: 0.3s ease-in-out;
-}
-.contact form button:hover::before {
-  width: 100%;
 }
 
 /************ Footer Css ************/
@@ -923,16 +924,13 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
 
 
 
-
-
-.contact .social-icon_github {
+.footer .social-icon_github {
   display: inline-block;
-  margin-left: 14px;
 }
 
-.contact .social-icon_github a {
-  width: 82px;
-  height: 82px;
+.footer .social-icon_github a {
+  width: 62px;
+  height: 62px;
   background: rgba(217, 217, 217, 0.1);
   display: inline-flex;
   border-radius: 30%;
@@ -943,10 +941,10 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.contact .social-icon_github a::before {
+.footer .social-icon_github a::before {
   content: "";
-  width: 82px;
-  height: 82px;
+  width: 42px;
+  height: 42px;
   position: absolute;
   background-color: #ffffff;
   border-radius: 30%;
@@ -954,17 +952,17 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
 transition: 0.3s ease-in-out;
 }
 
-.contact .social-icon_github a:hover::before {
+.footer .social-icon_github a:hover::before {
   transform: scale(1);
 }
 
-.contact .social-icon_github a img {
+.footer .social-icon_github a img {
 width: 40%;
 z-index: 1;
 transition: 0.3s ease-in-out;
 }
 
-.contact .social-icon_github a:hover img {
+.footer .social-icon_github a:hover img {
 filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 

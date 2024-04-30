@@ -1,17 +1,31 @@
-import { useState } from "react";
+import React, { useRef } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../static/contact-img.png";
 import TrackVisibility from 'react-on-screen';
 import 'animate.css'
-import email from '../static/email.png';
-import linkedin from '../static/linkedin.png';
-import ig from '../static/ig.png';
-import telegram from '../static/telegram.png';
-import wa from '../static/wa.png';
-import github from '../static/github.png';
+
+import emailjs from '@emailjs/browser';
 
 
 export const Contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_29d0odk', 'template_zbn4err', form.current, {
+        publicKey: 'TAxGREOMdC-riFrHZ',
+      })
+      .then(
+        () => {
+          form.current.reset();
+          alert("Successfully Sent message! Thanks for Contacting...")
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
 
 
   return (
@@ -23,30 +37,37 @@ export const Contact = () => {
                 <img  src={contactImg} alt="Contact Us"/>
             
           </Col>
-          <Col size={12} md={6} className="pb-3">
+          <Col size={12} md={6} className="p-3">
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn text-center" : "text-center"}>
+                <div class="container">
                 <h2>Get In Touch</h2>
-                <span >
-                  <div className="social-icon">
-                  <a target="_blank" href="mailto:jaydeeptalaviya8@gmail.com"><img src={email} alt="email" /></a>
-                  <a target="_blank" href="https://www.linkedin.com/in/jaydeep-talaviya-540901195"><img src={linkedin} alt="linkedin" /></a>
-                  <a target="_blank" href="https://t.me/Jay_talaviya"><img src={telegram} alt="tele" /></a>
-                    <a target="_blank" href="https://www.instagram.com/jay_talaviya_99?igsh=MWN6dG4zdzBrMDhrMA=="><img src={ig} alt="ig" /></a>
-                    <a target="_blank" href="https://wa.me/916353701592"><img src={wa} alt="wa" /></a>
 
-                  </div>
-                </span>
-                
+                <form  method="post" ref={form} onSubmit={sendEmail}>
+                  <div class="form-group">
+                          <input type="hidden" id="to_name" name="to_name" required/>
+                      </div>
+                      <div class="form-group">
+                          <label for="user_name">Name:</label>
+                          <input type="text" id="user_name" name="user_name" required/>
+                      </div>
+                      <div class="form-group">
+                          <label for="user_email">Email:</label>
+                          <input type="email" id="user_email" name="user_email" required/>
+                      </div>
+                      <div class="form-group">
+                          <label for="message">Message:</label>
+                          <textarea id="message" name="message" required></textarea>
+                      </div>
+                      <div class="form-group">
+                          <button className="vvd" type="submit">Submit</button>
+                      </div>
+                </form>
+              </div>
               </div>}
             </TrackVisibility>
-            <div className="github_section pt-4 text-center">
-                <h4>Visit to My Github</h4>
-                <div className="social-icon_github">
-                  <a href="https://github.com/jayedeep"><img src={github} alt="github" /></a>
-                  </div>
-              </div>
+            
 
           </Col>
         </Row>

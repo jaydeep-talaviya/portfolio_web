@@ -7,7 +7,7 @@ export const projects_data1 = [
 {
     project_name:'Evopay',
     project_description:'Evopay is a Parking Management system in Kenya, streamlining parking payments for end users. Through a user-friendly mobile app, individuals can easily pay for parking based on specified timeframes. On the admin side, the platform facilitates voucher creation and parking allocation, making parking management efficient and hassle-free. Evopay is your simplified solution for seamless parking transactions.',
-    technologies_used:'FastAPI,Google bigquery,Pandas,MySQL',
+    technologies_used:'Django,DRF,Postgresql,Bootstrap4.',
 },
 {
     project_name:'GeoLocator',
