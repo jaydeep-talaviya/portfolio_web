@@ -22,7 +22,7 @@ export const Footer = () => {
             <div className="github_section pt-4 text-center">
                   <h4>Visit to My Github</h4>
                   <div className="social-icon_github">
-                    <a href="https://github.com/jayedeep"><img src={github} alt="github" /></a>
+                    <a href="https://github.com/jaydeep-talaviya"><img src={github} alt="github" /></a>
                     </div>
                 </div>
           </Col>
