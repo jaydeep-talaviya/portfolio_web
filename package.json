@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jaydeep-talaviya.github.io/portfolio_web",
+  "homepage": "https://jaytalaviya.in",
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "@testing-library/jest-dom": "^5.17.0",
@@ -32,7 +32,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && node postbuild.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
