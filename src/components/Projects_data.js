@@ -1,12 +1,12 @@
 export const projects_data1 = [
 {
-    project_name:'Symbiosys',
-    project_description:"Symbiosys is a dynamic administrative platform, akin to Google Ads and Meta Ads, facilitating seamless campaign management across various social media channels. Its key feature lies in enabling users to create a single campaign across multiple channels (Meta, Google, Pinterest, etc.) based on user roles and permissions. Symbiosys streamlines campaign management, providing efficiency and versatility for businesses aiming to enhance their digital presence.",
+    project_name:'Ads Manager',
+    project_description:"Ads Manager is a dynamic administrative platform, akin to Google Ads and Meta Ads, facilitating seamless campaign management across various social media channels. Its key feature lies in enabling users to create a single campaign across multiple channels (Meta, Google, Pinterest, etc.) based on user roles and permissions. Symbiosys streamlines campaign management, providing efficiency and versatility for businesses aiming to enhance their digital presence.",
     technologies_used:"FastAPI,Google bigquery,Pandas,MySQL"
 },
 {
-    project_name:'Evopay',
-    project_description:'Evopay is a Parking Management system in Kenya, streamlining parking payments for end users. Through a user-friendly mobile app, individuals can easily pay for parking based on specified timeframes. On the admin side, the platform facilitates voucher creation and parking allocation, making parking management efficient and hassle-free. Evopay is your simplified solution for seamless parking transactions.',
+    project_name:'E-Parking',
+    project_description:'E-Parking is a Parking Management system in Kenya, streamlining parking payments for end users. Through a user-friendly mobile app, individuals can easily pay for parking based on specified timeframes. On the admin side, the platform facilitates voucher creation and parking allocation, making parking management efficient and hassle-free. Evopay is your simplified solution for seamless parking transactions.',
     technologies_used:'Django,DRF,Postgresql,Bootstrap4.',
 },
 {
